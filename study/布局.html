@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>布局</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            border: red solid 1px;
+            width: 1200px;
+        }
+        .box{
+            background-color: aliceblue;
+            height: 950px;
+            margin: auto;
+        }
+        .head{
+            display: flex;
+            background-color: antiquewhite;
+            margin-bottom:1px;
+            height: 100px;
+        }
+        .nav{
+            background-color: antiquewhite;
+            margin:1px auto;
+            height: 50px;
+        }
+        .fig{
+            background-color: antiquewhite;
+            margin:1px auto;
+            height: 300px;
+        }
+        .content{
+            background-color: antiquewhite;
+            margin:1px auto;
+            height: 400px;
+        }
+        .tail{
+            background-color: antiquewhite;
+            margin:1px auto;
+            height: 100px;
+        }
+        .head1, .head2, .head3{
+            height: 100px;
+        }
+        .head1{
+            width: 300px;
+            /*垂直和水平居中*/
+            display: flex;  align-items: center; justify-content: center;
+        }
+        .head2{
+            width: 400px;
+        }
+        .head3{
+            margin-left: 200px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+<!--        头部-->
+        <div class="head">
+            <div class="head1">
+                <a href="index.html"><img src="../img/logo.png" class="img1"> </a>
+            </div>
+            <div class="head2"></div>
+            <div class="head3"></div>
+        </div>
+<!--        导航-->
+        <div class="nav">
+
+        </div>
+<!--        图片-->
+        <div class="fig">
+
+        </div>
+<!--        内容-->
+        <div class="content">
+
+        </div>
+<!--        尾部-->
+        <div class="tail">
+
+        </div>
+    </div>
+</body>
+</html>

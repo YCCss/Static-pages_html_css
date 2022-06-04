@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮番图</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    div{
+        /*border: red solid 1px;*/
+        width: 1200px;
+    }
+    .box{
+        background-color: aliceblue;
+        height: 950px;
+        margin: auto;
+    }
+    /*.fig{*/
+    /*    !*background-color: antiquewhite;*!*/
+    /*    margin:1px auto;*/
+    /*    height: 300px;*/
+    /*}*/
+
+    /*轮番图*/
+    .fig img{
+        width: 800px;
+        height: 300px;
+    }
+    .fig{
+        position: relative;
+        margin: 0px auto;
+        width: 800px;
+        height: 300px;
+        text-align: center;
+        /*隐藏列表前面的点*/
+        color: #ffffff;
+        overflow: hidden;
+    }
+    .fig ul{
+        /*border: black solid 1px;*/
+        margin: 0px 0px;
+        padding: 0;
+        width: calc(800px * 3);
+        transition: all .5s;
+    }
+    .fig li{
+        float: left;
+        width: 800px;
+        height: 300px;
+        list-style: none;
+        line-height: 300px;
+        font-size: 50px;
+    }
+    .fig li:nth-child(1)
+    {
+        background-color: red;
+    }
+    .fig li:nth-child(2)
+    {
+        background-color: blue;
+    }
+    .fig li:nth-child(3)
+    {
+        background-color: green;
+    }
+    .fig input[name="button"]
+    {
+        display: none;
+    }
+    .fig label[for^="button"]
+    {
+        position: absolute;
+        top: 250px;
+        width: 20px;
+        height: 20px;
+        margin: 0px 10px;
+        line-height: 20px;
+        color: #ffffff;
+        background-color: #ffffff;
+        cursor: pointer;
+        border-radius: 50%;
+        transition: .3s;
+    }
+    .fig label[for="button1"]{
+        left: 40%;
+    }
+    .fig label[for="button2"]{
+        left: 45%;
+    }
+    .fig label[for="button3"]{
+        left: 50%;
+    }
+    #button1:checked ~ul{
+        margin-left: 0;
+    }
+    #button2:checked ~ul{
+        margin-left: -800px;
+    }
+    #button3:checked ~ul{
+        margin-left: -1600px;
+    }
+    #button1:checked ~ label[for="button1"]{
+        background: royalblue;
+    }
+    #button2:checked ~ label[for="button2"]{
+        background: royalblue;
+    }
+    #button3:checked ~ label[for="button3"]{
+        background: royalblue;
+    }
+
+
+
+    </style>
+</head>
+<body>
+<div class="box">
+     <div class="fig">
+         <input type="radio" name="button" value="0" id="button1" checked hidden>
+         <label for="button1"></label>
+         <input type="radio" name="button" value="0" id="button2" hidden>
+         <label for="button2"></label>
+         <input type="radio" name="button" value="0" id="button3" hidden>
+         <label for="button3"></label>
+
+         <ul>
+             <li><img src="img/0.jpg"></li>
+             <li><img src="img/1.jpg"></li>
+             <li><img src="img/2.jpg"></li>
+         </ul>
+     </div>
+
+</div>
+</body>
+</html>
