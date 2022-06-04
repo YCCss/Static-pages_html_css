@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div{
+    /*border: red solid 1px;*/
+}
+.box{
+    /*居中*/
+    margin: auto;
+}
+.head{
+    display: flex;
+    background-color: azure;
+    height: 100px;
+    width: 1400px;
+    margin: auto;
+}
+.out-nav{
+    background-color: royalblue;
+    margin: auto;
+    height: 50px;
+}
+.nav{
+    background-color: royalblue;
+    margin: auto;
+    height: 50px;
+    width: 1400px;
+}
+.fig{
+    /*background-color: antiquewhite;*/
+    margin: 1px auto;
+    height: 300px;
+    width: 1400px;
+}
+.content{
+    background-color: azure;
+    margin: 1px auto;
+    height: 400px;
+    width: 1400px;
+}
+.tail{
+    background-color: royalblue;
+    margin: auto;
+    height: 50px;
+}

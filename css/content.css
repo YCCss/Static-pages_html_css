@@ -1,0 +1,62 @@
+/*整个内容盒子的样式*/
+.content{
+    display: flex;
+    /*盒子等间隔排列*/
+    justify-content: space-between;
+}
+.content .left, .content .mid, .content .right{
+    height: 400px;
+}
+.content .left{
+    width: 500px;
+}
+.content .mid{
+    width: 500px;
+}
+.content .right{
+    width: 300px;
+}
+
+/*三个盒子的小标题样式*/
+.content h{
+    font-size: 25px;
+}
+.top{
+    height: 45px;
+    border-bottom: green solid 2px;
+    margin: 10px 0;
+}
+.top .m-title{
+    background-color: blueviolet;
+    height: 40px;
+    width: 120px;
+    line-height: 40px;
+    text-align: center;
+    /*添加阴影*/
+    box-shadow: 10px 5px 5px rgb(75, 75, 75);
+    float: left;
+}
+.top .more{
+    height: 40px;
+    width: 100px;
+    line-height: 40px;
+    text-align: center;
+    float: right;
+}
+.top a {
+    /*去链接下划线*/
+    text-decoration: none;
+}
+
+/*左边盒子的样式*/
+
+
+
+
+/*中间盒子的样式*/
+
+
+
+
+
+/*右边盒子的样式*/

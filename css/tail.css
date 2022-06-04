@@ -1,0 +1,6 @@
+.tail p{
+    /*水平居*/
+    text-align: center;
+    /*垂直居中*/
+    line-height: 25px;
+}
